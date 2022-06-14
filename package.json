@@ -4,7 +4,9 @@
   "description": "This is a sample mono repo",
   "main": " ",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "web-dev": "cd app/samplewebapp && npm run dev",
+    "mobile-dev": "cd app/sampleMobileApp && npx react-native start",
+    "run-android": "cd app/sampleMobileApp && npx react-native run-android"
   },
   "repository": {
     "type": "git",
