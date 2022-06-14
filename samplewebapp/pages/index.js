@@ -1,14 +1,12 @@
-import Demo from '../../shared/components/Demo';
-import { AppRegistry } from 'react-native';
-
-export const getInitialProps = async ({ renderPage }) => {
-  AppRegistry.registerComponent('demo', () => Demo);
-  const page = await renderPage();
-  return { ...page };
-};
+// import Demo from '../../shared/components/Demo';
 
 const index = () => {
-  return <Demo />;
+  return (
+    <div>
+      <h1>This is from the web</h1>
+      {/* <Demo /> */}
+    </div>
+  );
 };
 
 export default index;

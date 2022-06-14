@@ -1,18 +1,7 @@
 const path = require('path');
 
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// }
-
 const exportModule = {
   webpack: (config, { defaultLoaders }) => {
-    // config.resolve.alias = {
-    //   ...(config.resolve.alias || {}),
-    //   //Transform all direct use of 'react-native' imports to 'react-native-web'
-    //   'react-native$': path.join(__dirname, 'node_modules', 'react-native-web'),
-    // };
-
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
       // Transform all direct `react-native` imports to `react-native-web`
@@ -34,7 +23,7 @@ const exportModule = {
     ];
 
     config.module.rules.push({
-      test: /\.+(js |jsx)$/,
+      test: /\.+(js|jsx)$/,
       use: defaultLoaders.babel,
       include: [path.resolve(__dirname, '..', 'shared')],
     });
