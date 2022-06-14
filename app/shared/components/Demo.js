@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 
 const Demo = () => {
   return (
-    <View>
+    <View style={{ backgroundColor: 'red' }}>
       <Text>Demo Home Page</Text>
     </View>
   );
