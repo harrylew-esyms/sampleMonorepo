@@ -1,0 +1,19 @@
+{
+  "name": "sample-monorepo",
+  "version": "1.0.0",
+  "description": "This is a sample mono repo",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrylew-esyms/sampleMonorepo.git"
+  },
+  "author": "Harry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrylew-esyms/sampleMonorepo/issues"
+  },
+  "homepage": "https://github.com/harrylew-esyms/sampleMonorepo#readme"
+}
